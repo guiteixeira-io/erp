@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--SC_PAGE_CHARSET-->
+        <title>Controle interno - TSA</title>
+        <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}login/css/login.css">
+        <link rel="stylesheet" type="text/css" href="{SC_LIB_CURRENT}libs/css/styles.css">
+		<link rel="shortcut icon" type="image/png" href="{SC_LIB_CURRENT}login/img/logo.png"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="login1" class="page">
+            <div class="header" id="logo" >
+                <img src="{SC_LIB_CURRENT}login/img/login-aprimoramento.png" width="200" height"400" alt="">
+            </div>
+            <form class="form form-center" action="" {SC_FORM_ATTR}>
+                <!--SC_FORM_HIDDEN-->
+                <h2>
+                    Acesso
+                </h2>
+                <div class="control">
+                    <label class="form-label">Usuário</label>
+                    <input class="input {SC_FIELD_CLASS}" type="text" placeholder="Usuário" {SC_FIELD_INFO_login}>					
+                </div>
+                <div class="control">
+                    <label class="form-label">Senha</label>
+                    <input class="input {SC_FIELD_CLASS}" type="password" placeholder="Senha" {SC_FIELD_INFO_pswd}>					
+                </div>
+				<!--SC_CAPTCHA-->
+				<!--SC_REQUIRED_MSG-->
+                <div class="submit">
+                    <input class="button button-block" type="button" value="Entrar" {SC_FORM_SUBMIT_CALL} />
+                </div>
+                {SC_FIELD_INFO_Links}
+            </form>
+        </div>
+
+        <div class="alert-message negative">
+            <span class="message"></span>
+        </div>
+        
+        <!--SC_JS_LIB-->
+        <script type="text/javascript" src="{SC_LIB_CURRENT}libs/js/error.js"></script>
+    </body>
+</html>
